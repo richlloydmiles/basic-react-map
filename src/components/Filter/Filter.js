@@ -1,28 +1,31 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import './Filter.css'
-import { filterPeople } from '../../state/actions'
+import React from "react";
+import { connect } from "react-redux";
+import "./Filter.css";
+import { filterPeople } from "../../state/actions";
 
-const Filter = (props) => {
+const Filter = props => {
   return (
-    <div className={'filter'}>
+    <div className={"filter"}>
       <input
         type="text"
-        placeholder={'Filter people'}
-        onChange={(event) => props.filterPeople(event.target.value)}
+        placeholder={"Filter people"}
+        onChange={event => props.filterPeople(event.target.value)}
       />
     </div>
-  )
-}
+  );
+};
 
 function mapState(state) {
-  return state
+  return state;
 }
 
 function mapDispatch(dispatch) {
   return {
-    filterPeople: (search) => dispatch(filterPeople(search)),
-  }
+    filterPeople: search => dispatch(filterPeople(search))
+  };
 }
 
-export default connect(mapState, mapDispatch)(Filter)
+export default connect(
+  mapState,
+  mapDispatch
+)(Filter);

@@ -1,6 +1,6 @@
 export function filterPeople(payload) {
   return {
-    type: 'FILTER_PEOPLE',
-    payload,
-  }
+    type: "FILTER_PEOPLE",
+    payload
+  };
 }

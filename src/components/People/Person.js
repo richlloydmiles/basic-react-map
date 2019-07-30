@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-const Person = (props) => {
+const Person = props => {
   return (
-    <div className={'person'}>
+    <div className={"person"}>
       {props.person.Firstname} {props.person.Surname}
     </div>
-  )
-}
+  );
+};
 
 Person.propTypes = {
   person: PropTypes.exact({
@@ -15,9 +15,8 @@ Person.propTypes = {
     Surname: PropTypes.string,
     Display: PropTypes.string,
     Lat: PropTypes.number,
-    Long: PropTypes.number,
-  }).isRequired,
-}
+    Long: PropTypes.number
+  }).isRequired
+};
 
-
-export default Person
+export default Person;
