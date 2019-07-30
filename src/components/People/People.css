@@ -1,0 +1,7 @@
+.people {
+    margin: 30px 0;
+}
+
+.person, .no-results {
+    padding-left: 15px;
+}

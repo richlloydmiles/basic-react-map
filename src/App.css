@@ -1,0 +1,28 @@
+body {
+    background: #646569;
+    background-image: linear-gradient(to bottom, #555, #363636);
+    color: #F5831F;
+    font-family: Lato;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 500px;
+}
+
+.map-box {
+    position: relative;
+    flex-grow: 1;
+}
+
+h1 {
+    padding-left: 15px;
+}
+
+.footer {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 15px;
+}
